@@ -1,7 +1,7 @@
 const Form = ({handleSchoolChange, handleCourseChange, handleDateOfStudyChange}) => {
     return (
         <div>
-            <h2>This is Another Component</h2>
+            <h2>Add Education Experience</h2>
             <input
                 type="text"
                 onChange={(event) => handleSchoolChange(event.target.value)}
@@ -13,7 +13,7 @@ const Form = ({handleSchoolChange, handleCourseChange, handleDateOfStudyChange})
                 placeholder="Enter your Course"
             />
             <input
-                type="date"
+                type="text"
                 onChange={(event) => handleDateOfStudyChange(event.target.value)}
                 placeholder="Enter your Date Of Study"
             />

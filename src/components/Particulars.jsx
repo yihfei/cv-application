@@ -2,11 +2,11 @@
 
 const Particulars = ({name, email, phone}) => {
     return (
-        <>
+        <div className="particulars">
             <h2>{name}</h2>
-            <h3>{email}</h3>
+            <p>{email}</p>
             <p>{phone}</p>
-        </>
+        </div>
     )
 }
 

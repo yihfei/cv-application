@@ -24,6 +24,7 @@ const ExperienceForm = ({ onAdd }) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <h2>Add Professional Experience</h2>
             <div>
                 <label>Title:</label>
                 <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required />

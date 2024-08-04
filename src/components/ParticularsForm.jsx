@@ -3,7 +3,7 @@
 const Form = ({handleNameChange, handleEmailChange, handlePhoneChange}) => {
     return (
         <div>
-            <h2>This is Another Component</h2>
+            <h2>Add personal particulars</h2>
             <input
                 type="text"
                 onChange={(event) => handleNameChange(event.target.value)}

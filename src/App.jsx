@@ -33,16 +33,19 @@ function App() {
 
 
   return (
-    <>
-      <ParticularsForm handleNameChange={setName} handleEmailChange={setEmail} handlePhoneChange={setPhone}/>
-      <EducationForm handleSchoolChange={setSchool} handleCourseChange={setCourse} handleDateOfStudyChange={setDateOfStudy}/>
-      <ExperienceForm onAdd={handleAdd} />
-      <div>
+    <main>
+      
+      <div className="form">
+        <ParticularsForm handleNameChange={setName} handleEmailChange={setEmail} handlePhoneChange={setPhone}/>
+        <EducationForm handleSchoolChange={setSchool} handleCourseChange={setCourse} handleDateOfStudyChange={setDateOfStudy}/>
+        <ExperienceForm onAdd={handleAdd} />
+      </div>
+      <div className="resume"> 
         <Particulars name={name} email={email} phone={phone}/>
         <Education school={school} course={course} dateOfStudy={dateOfStudy} />
         <Experiences experiences={experiences} onDelete={handleDelete} />
       </div>
-    </>
+    </main>
   )
 }
 
